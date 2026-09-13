@@ -1,0 +1,28 @@
+{
+  "name": "nam-react",
+  "version": "1.0.0",
+  "description": "react app by saurabh",
+  "homepage": "https://github.com/skyup259/nam-react#readme",
+  "bugs": {
+    "url": "https://github.com/skyup259/nam-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyup259/nam-react.git"
+  },
+  "license": "ISC",
+  "author": "saurabh sunny",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}
