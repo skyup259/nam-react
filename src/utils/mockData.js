@@ -12,8 +12,8 @@ export const listOfRestaurants =  [
                           "Italian",
                           "Fast Food"
                         ],
-                        "avgRating": 4.3,
-                        "avgRatingString": "4.3",
+                        "avgRating": 3.3,
+                        "avgRatingString": "3.3",
                         "totalRatingsString": "10K+ ratings",
                         "veg": false,
                         "sla": {
@@ -68,8 +68,8 @@ export const listOfRestaurants =  [
                           "Salads",
                           "Vegan"
                         ],
-                        "avgRating": 4.7,
-                        "avgRatingString": "4.7",
+                        "avgRating": 3.7,
+                        "avgRatingString": "3.7",
                         "totalRatingsString": "8K+ ratings",
                         "veg": true,
                         "sla": {
@@ -96,8 +96,8 @@ export const listOfRestaurants =  [
                           "North Indian",
                           "Biryani"
                         ],
-                        "avgRating": 4.2,
-                        "avgRatingString": "4.2",
+                        "avgRating": 2.2,
+                        "avgRatingString": "2.2",
                         "totalRatingsString": "12K+ ratings",
                         "veg": false,
                         "sla": {
@@ -208,8 +208,8 @@ export const listOfRestaurants =  [
                           "Dosa",
                           "Idli"
                         ],
-                        "avgRating": 4.5,
-                        "avgRatingString": "4.5",
+                        "avgRating": 3.5,
+                        "avgRatingString": "3.5",
                         "totalRatingsString": "11K+ ratings",
                         "veg": true,
                         "sla": {
@@ -236,8 +236,8 @@ export const listOfRestaurants =  [
                           "Pasta",
                           "Continental"
                         ],
-                        "avgRating": 4.1,
-                        "avgRatingString": "4.1",
+                        "avgRating": 3.1,
+                        "avgRatingString": "3.1",
                         "totalRatingsString": "6K+ ratings",
                         "veg": false,
                         "sla": {

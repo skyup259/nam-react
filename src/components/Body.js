@@ -1,9 +1,21 @@
 import {listOfRestaurants} from '../utils/mockData';
 import RestaurantCard from './RestaurantCard';
-const Body = () => (
+import { useState } from 'react';
+
+const Body = () => {
+    let [restaurantsList, SetRestaurantsList ] = useState(listOfRestaurants);
+    return (
     <div className="body">
         <div className="search-bar">
-            <button>Top Rated Resturant</button>
+            <button onClick={() => {
+                const filteredRes = listOfRestaurants.filter((res) => {
+                    return res.info.avgRating>4;
+                });
+                SetRestaurantsList(filteredRes);
+                console.log(filteredRes)
+            }}>
+                Top  Resturant
+            </button>
 
         </div>
         <div className="links">
@@ -14,11 +26,12 @@ const Body = () => (
         <div className="restaurant-container">
             {/* {RestaurantCard({restaurantName:"resturant 1", description:"descriptin of rest 1"})} */}
             {/* <RestaurantCard resturantList={listOfRestaurants[0]} /> */}
-            {listOfRestaurants.map((restaurant) =>(
+            {restaurantsList.map((restaurant) =>(
                 <RestaurantCard restData={restaurant} key={restaurant.info.id} />
             ))}
         </div>
     </div>
-);
+    )
+};
 
 export default Body;
