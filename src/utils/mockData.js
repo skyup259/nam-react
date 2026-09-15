@@ -1,22 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-/*
-header component
-    -logo
-    -home
-    -About
-body component
-    -search bar
-    -links (restaurants, food, grocery)
-    -restaurant container
-        restaurant card
-footer component
-    -copyrights
-    -social links
-    -contact info
-*/
-const listOfRestaurants =  [
+export const listOfRestaurants =  [
                     {
                       "info": {
                         "id": "123456",
@@ -270,64 +252,3 @@ const listOfRestaurants =  [
                       }
                     }
                   ];
-const Header = () => (
-    <div className="header">
-        <div className="logo-container">
-            <img src="/assets/logo.jpg" alt="Logo" />
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </nav>
-    </div>
-);
-
-const RestaurantCard = (props) => (
-    console.log(props),
-    <div className="restaurant-card">
-        <img src="/assets/restaurant.jpg" alt="Restaurant" />
-        <h3>{props.restData.info?.name}</h3>
-        <h3>{props.restData.info?.cuisines.join(", ")}</h3>
-        <h3>{props.restData.info?.costForTwo}</h3>
-    </div>
-);
-
-const Body = () => (
-    <div className="body">
-        <div className="search-bar">
-            <input type="text" placeholder="Search for restaurants, food, grocery..." />
-
-        </div>
-        <div className="links">
-            <a href="/restaurants">Restaurants</a>  
-            <a href="/food">Food</a>
-            <a href="/grocery">Grocery</a>
-        </div>
-        <div className="restaurant-container">
-            {/* {RestaurantCard({restaurantName:"resturant 1", description:"descriptin of rest 1"})} */}
-            {/* <RestaurantCard resturantList={listOfRestaurants[0]} /> */}
-            {listOfRestaurants.map((restaurant) =>(
-                <RestaurantCard restData={restaurant} key={restaurant.info.id} />
-            ))}
-        </div>
-    </div>
-);
-
-const Footer = () => (
-  <div className='footer'>
-    <span>copy rights</span>
-  </div>
-)
-
-const AppLayout = () => (
-    <div className="app">
-        <Header />  
-        <Body />   
-        <Footer /> 
-    </div>
-)
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppLayout />);
