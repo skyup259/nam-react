@@ -18,3 +18,9 @@
     display:flex;
     flex-wrap: wrap;
 }
+.search-bar {
+    display: flex;
+    .search-box {
+        margin: 0 20px;
+    }
+}
